@@ -1,0 +1,2 @@
+(this["webpackJsonpTaskingManager-frontend"]=this["webpackJsonpTaskingManager-frontend"]||[]).push([[60],{312:function(a,n){Intl.PluralRules&&"function"===typeof Intl.PluralRules.__addLocaleData&&Intl.PluralRules.__addLocaleData({data:{categories:{cardinal:["one","other"],ordinal:["other"]},fn:function(a,n){var e=!String(a).split(".")[1];return n?"other":1==a&&e?"one":"other"}},locale:"fy"})}}]);
+//# sourceMappingURL=60.b96569e1.chunk.js.map
