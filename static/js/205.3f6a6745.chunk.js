@@ -1,2 +1,0 @@
-(this["webpackJsonpTaskingManager-frontend"]=this["webpackJsonpTaskingManager-frontend"]||[]).push([[205],{457:function(a,n){Intl.PluralRules&&"function"===typeof Intl.PluralRules.__addLocaleData&&Intl.PluralRules.__addLocaleData({data:{categories:{cardinal:["one","other"],ordinal:["other"]},fn:function(a,n){var e=String(a).split("."),t=Number(e[0])==a;return n?"other":0==a||1==a||t&&a>=11&&a<=99?"one":"other"}},locale:"tzm"})}}]);
-//# sourceMappingURL=205.3f6a6745.chunk.js.map

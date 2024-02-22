@@ -1,2 +1,0 @@
-(this["webpackJsonpTaskingManager-frontend"]=this["webpackJsonpTaskingManager-frontend"]||[]).push([[819],{2335:function(s,n,e){"use strict";e.r(n),e.d(n,"SwaggerView",(function(){return a}));e(1);var t=e(9),c=e(164),i=e(0);function a(){return Object(c.b)("API Docs"),Object(i.jsx)("div",{className:"w-100 cf",children:Object(i.jsx)("iframe",{className:"fixed w-100 bn vh-minus-122 vh-minus-122-ns",title:"api-docs",src:"https://hotosm.github.io/swagger/?url=".concat(t.b,"system/docs/json/")})})}}}]);
-//# sourceMappingURL=swagger.ab350c93.chunk.js.map

@@ -1,2 +1,0 @@
-(this["webpackJsonpTaskingManager-frontend"]=this["webpackJsonpTaskingManager-frontend"]||[]).push([[56],{308:function(n,a){Intl.PluralRules&&"function"===typeof Intl.PluralRules.__addLocaleData&&Intl.PluralRules.__addLocaleData({data:{categories:{cardinal:["one","other"],ordinal:["one","other"]},fn:function(n,a){var e=String(n).split("."),l=e[0],t=e[1]||"",o=!e[1],r=l.slice(-1),i=t.slice(-1);return a?1==n?"one":"other":o&&(1==l||2==l||3==l)||o&&4!=r&&6!=r&&9!=r||!o&&4!=i&&6!=i&&9!=i?"one":"other"}},locale:"fil"})}}]);
-//# sourceMappingURL=56.0578a453.chunk.js.map
