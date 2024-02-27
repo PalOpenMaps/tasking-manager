@@ -20,6 +20,8 @@ services:
     labels:
       - traefik.http.routers.backend.rule=(Host(`127.0.0.1`) || Host(`localhost`)) && PathPrefix(`/api/`)
       - traefik.http.services.backend.loadbalancer.server.port=5000
+    ports:
+     - "5000:5000"
 
   migration:
     <<: *backend
@@ -33,6 +35,8 @@ services:
     restart: always
     networks:
       - tm-web
+    ports:
+     - "3000:80"
     labels:
       - traefik.http.routers.frontend.rule=Host(`127.0.0.1`) || Host(`localhost`)
       - traefik.http.services.frontend.loadbalancer.server.port=3000
@@ -44,20 +48,22 @@ services:
     env_file: ${ENV_FILE:-tasking-manager.env}
     networks:
       - tm-web
-
-  traefik:
-    image: traefik:v2.10
-    container_name: tm-traefik
-    restart: always
-    ports:
-      - "${TM_DEV_PORT:-80}:80"
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-    command:
-      - --entrypoints.web.address=:80
-      - --providers.docker=true
-    networks:
-      - tm-web
+    - ../data/tm-db:/var/lib/postgresql/data
+
+  # traefik:
+  #   image: traefik:v2.10
+  #   container_name: tm-traefik
+  #   restart: always
+  #   ports:
+  #     - "880:80"
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock:ro
+  #   command:
+  #     - --entrypoints.web.address=:80
+  #     - --providers.docker=true
+  #   networks:
+  #     - tm-web
 
 networks:
   tm-web:
